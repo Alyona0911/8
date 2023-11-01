@@ -9,10 +9,7 @@ def phone_format(n):  # форматирование телефонного но
 
 def printData(data):  # Функция вывода телефонной книги в консоль
     phoneBook = []
-    # splitLine = "=" * 49
-    # print(splitLine)
     print(" №  Фамилия       Имя          Номер телефона")
-    # print(splitLine)
     personID = 1
 
     for contact in data:
@@ -31,7 +28,7 @@ def printData(data):  # Функция вывода телефонной кни�
         personID, lastName, name, phone = contact.values()
         print(f"{personID:>2}. {lastName:<15} {name:<10} -- {phone:<15}")
 
-    # print(splitLine)
+    
 
 
 def showContacts(fileName):  # Функция открытия телефонной книги
@@ -111,7 +108,7 @@ def deleteContact(fileName):  # Функция удаления контакта
             input("Введите номер контакта для удаления или 0 для возврата в главное меню: ")
         )
         if numberContact != 0:
-            print(f"Deleting record: {data[numberContact-1].rstrip().split(',')}\n")
+            print(f"Удаление записи: {data[numberContact-1].rstrip().split(',')}\n")
             data.pop(numberContact - 1)
             with open(fileName, "w", encoding="UTF-8") as file:
                 file.write("".join(data))
