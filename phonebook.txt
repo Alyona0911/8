@@ -1,0 +1,6 @@
+Petrov,Aleksey,8-999-888-7777
+Romanova,Nataliya,+7-777-77-777-77
+Shirokov,Sergey,8-900-55-555-55
+Sidorov,Vitaliy,8-900-32-659-87
+Sidorova,Yuliya,+71231212312
+Tatarinov,Maksim,+71234512344
